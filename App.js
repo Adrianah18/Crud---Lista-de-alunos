@@ -1,9 +1,13 @@
-// App.js
 import React from 'react';
-import Navegacao from './Navegation';
+import { NavigationContainer } from '@react-navigation/native';
+import Router from './src/routes/Router';
+
 
 export default function App() {
+
   return (
-    <Navegacao />
+    <NavigationContainer>
+      <Router />
+    </NavigationContainer>
   );
-};
+}
